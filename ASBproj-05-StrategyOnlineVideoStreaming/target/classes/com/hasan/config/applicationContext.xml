@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:util="http://www.springframework.org/schema/util" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd"> <!-- bean definitions here -->
+
+    <bean id="low" class="com.hasan.sbeans.Low">
+        <property name="resolution" value="480"/>
+        <property name="bandwidth" value="3"/>
+    </bean>
+    <alias name="low" alias="lowBean"/>
+
+    <bean id="hd" class="com.hasan.sbeans.Hd">
+        <property name="frame" value="60"/>
+        <property name="bandwidth" value="15"/>
+    </bean>
+    
+	<alias name="hd" alias="hdBean"/>
+	
+	<bean id="ultra" class="com.hasan.sbeans.UltraHD">
+        <property name="dolBy" value="false"/>
+        <property name="bandwidth" value="15"/>
+    </bean>
+    
+	<alias name="ultra" alias="ultraBean"/>
+
+</beans>
