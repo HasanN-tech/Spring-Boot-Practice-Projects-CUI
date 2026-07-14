@@ -1,0 +1,16 @@
+product:
+  productId: 1001
+  productName: Laptop
+  price: 55000
+  brand: Dell
+  Availability: true
+ 
+  colors:
+  - Black
+  - Silver
+  - Orange
+
+  stock:
+   Hyderabad: 20
+   Chennai: 15
+   Banglore: 22
