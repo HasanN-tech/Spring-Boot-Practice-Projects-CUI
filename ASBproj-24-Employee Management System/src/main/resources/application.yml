@@ -1,0 +1,15 @@
+employee:
+  empId: 111
+  empName: Hasan
+  salary: 85000
+  department: Development
+  company: wipro
+ 
+  skills:
+  - Java
+  - SQL
+  - Spring Boot
+
+  projRating:
+   BankingProject: A
+   EcommerceProject: B+
